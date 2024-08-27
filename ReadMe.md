@@ -4,8 +4,8 @@ Una simple página web que permite a los usuarios encriptar y desencriptar texto
 
 ## Características
 
-- Encriptar Texto:** Asegura tus mensajes encriptándolos.
-- Descifrar Texto:** Descifra fácilmente los mensajes cifrados.
+- **Encriptar Texto:** Asegura tus mensajes encriptándolos.
+- **Descifrar Texto:** Descifra fácilmente los mensajes cifrados.
 
 ## Tecnologías utilizadas
 
