@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    font-size: 1rem;
+}
+
+.presentacion {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.presentacion__logo {
+    padding: 20px;
+    width: 7.5rem;
+    height: auto;
+    max-width: 100%
+}
+
+.presentacion__input__cuadroTexto {
+    margin-top: 10.5rem;
+    margin-left: 2.5rem;
+    width: 36rem;
+    height: 12.5rem;
+    border: 0;
+    background-color: #F3F5FC;
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    color: #0A3871;
+    outline: none;
+    max-width: 100%;
+}
+
+.presentacion__input {
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    color: #0A3871;
+    opacity: 0.7;
+}
+
+.aviso {
+    display: flex;
+    margin-top: 29rem;
+}
+
+.presentacion__input__botones {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.presentacion__input__botones button {
+    padding: 1.563rem 5rem;
+    background-color: #0A3871;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 4.188rem;
+    border-radius: 1.125rem;
+    max-width: 100%;
+}
+
+#desencriptarBoton {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.presentacion__output {
+    margin: 2.5rem;
+    width: 25rem;
+    height: 54rem;
+    background-color: white;
+    border-radius: 1.125rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+}
+
+.presentacion__output__muñeco {
+    padding: 0px 32px 0px 32px;
+    width: 336px;
+    max-width: 100%;
+    height: 304px;
+    margin-top: 243px;
+}
+
+.presentacion__output__texto {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+#output {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    width: 92%;
+    height: 18%;
+    border: none;
+    font-size: 1.25rem;
+    color: #0A3871;
+    background-color: white; 
+    outline: none;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    word-break: break-word; 
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .presentacion__logo{
+        margin-left: 0;
+        align-self: flex-start ;
+    }
+    .presentacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion__input__cuadroTexto {
+        width: auto;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .presentacion__input__botones {
+        flex-direction: column;
+        gap: 1rem;
+        width: auto;
+        max-width: 400px;
+    }
+
+    .aviso {
+        display: flex;
+        margin-top: 9rem;
+    }
+
+    .presentacion__input__botones button {
+        width: 100%;
+    }
+
+    .presentacion__output {
+        width: auto;
+        height: 200px;
+        padding: 20px;
+        margin-top: 2rem;
+    }
+
+    .presentacion__output__muñeco {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .presentacion__input__cuadroTexto {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .aviso {
+        display: flex;
+        margin-top: 9rem;
+    }
+
+    .presentacion__output__muñeco {
+        display: none;
+    }
+
+
+    .presentacion__input__botones button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .presentacion__logo {
+        width: auto;
+    }
+
+    .presentacion__input__cuadroTexto {
+        font-size: 1.25rem;
+    }
+
+    .aviso {
+        display: flex;
+        margin-top: 9rem;
+    }
+
+    .presentacion__output__muñeco {
+        display: none;
+    }
+
+    .presentacion__input__botones button {
+        padding: 0.75rem;
+        font-size: 0.875rem;
+    }
+}
