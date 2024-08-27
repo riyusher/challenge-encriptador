@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Challenge Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
+
+    <header>
+        <img class="presentacion__logo" src="./assets/Logo.png">
+    </header>
     
+    <main  class="presentacion">
+        <div class="presentacion__input">
+            <textarea class="presentacion__input__cuadroTexto" placeholder="Ingresa el texto aquí" id="input"></textarea>
+            
+            <div class="aviso">
+                <img class="avisoGif" src="./assets/icons8-atención.gif">
+                <p>Sólo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="presentacion__input__botones">
+                <button id="encriptarBoton" onclick="encriptar()">Encriptar</button>
+                <button id="desencriptarBoton" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="presentacion__output">
+            <img class="presentacion__output__muñeco" src="./assets/Muñeco.png" id="muñeco">
+            <p class="presentacion__output__texto1">Ningún mensaje fue encontrado</p>
+            <p class="presentacion__output__texto2">Ingresa el texto que desees encriptar o desencriptar</p>
+            <textarea id="output" class="hidden" readonly></textarea>
+        </div>
+
+        <script src="./script.js"></script>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Hebert León</p>
+    </footer>
 </body>
 </html>
